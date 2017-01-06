@@ -13,12 +13,12 @@
 		AEE7BCA81E1F18B1000BEE6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE7BCA61E1F18B1000BEE6F /* Main.storyboard */; };
 		AEE7BCAA1E1F18B1000BEE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEE7BCA91E1F18B1000BEE6F /* Assets.xcassets */; };
 		AEE7BCAD1E1F18B1000BEE6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE7BCAB1E1F18B1000BEE6F /* LaunchScreen.storyboard */; };
-		AEE7BCB51E1F196C000BEE6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEE7BCB41E1F196C000BEE6F /* GoogleService-Info.plist */; };
 		AEE7BCBA1E1F34BB000BEE6F /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCB91E1F34BB000BEE6F /* CustomView.swift */; };
 		AEE7BCBD1E1F3543000BEE6F /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCBC1E1F3543000BEE6F /* Contants.swift */; };
 		AEE7BCBF1E1F3DC4000BEE6F /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCBE1E1F3DC4000BEE6F /* RoundBtn.swift */; };
 		AEE7BCC11E1F45F6000BEE6F /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCC01E1F45F6000BEE6F /* CustomField.swift */; };
 		AEE7BCC31E1F4736000BEE6F /* CustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCC21E1F4736000BEE6F /* CustomBtn.swift */; };
+		AEE7BCC61E1F57C9000BEE6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEE7BCC51E1F57C9000BEE6F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +31,13 @@
 		AEE7BCA91E1F18B1000BEE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEE7BCAC1E1F18B1000BEE6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEE7BCAE1E1F18B1000BEE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEE7BCB41E1F196C000BEE6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEE7BCB91E1F34BB000BEE6F /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		AEE7BCBC1E1F3543000BEE6F /* Contants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		AEE7BCBE1E1F3DC4000BEE6F /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		AEE7BCC01E1F45F6000BEE6F /* CustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 		AEE7BCC21E1F4736000BEE6F /* CustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBtn.swift; sourceTree = "<group>"; };
+		AEE7BCC41E1F5657000BEE6F /* MySocialApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySocialApp.entitlements; sourceTree = "<group>"; };
+		AEE7BCC51E1F57C9000BEE6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3C5EACF2EF8ED21D0325B60 /* Pods-MySocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySocialApp/Pods-MySocialApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +83,7 @@
 		AEE7BCA11E1F18B1000BEE6F /* MySocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				AEE7BCC41E1F5657000BEE6F /* MySocialApp.entitlements */,
 				AEE7BCBB1E1F3533000BEE6F /* Util */,
 				AEE7BCB61E1F1DB7000BEE6F /* Model */,
 				AEE7BCB81E1F1DC3000BEE6F /* Controller */,
@@ -91,7 +93,7 @@
 				AEE7BCAB1E1F18B1000BEE6F /* LaunchScreen.storyboard */,
 				AEE7BCA91E1F18B1000BEE6F /* Assets.xcassets */,
 				AEE7BCAE1E1F18B1000BEE6F /* Info.plist */,
-				AEE7BCB41E1F196C000BEE6F /* GoogleService-Info.plist */,
+				AEE7BCC51E1F57C9000BEE6F /* GoogleService-Info.plist */,
 			);
 			path = MySocialApp;
 			sourceTree = "<group>";
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DPBA8FX7MF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -203,8 +210,8 @@
 			files = (
 				AEE7BCAD1E1F18B1000BEE6F /* LaunchScreen.storyboard in Resources */,
 				AEE7BCAA1E1F18B1000BEE6F /* Assets.xcassets in Resources */,
-				AEE7BCB51E1F196C000BEE6F /* GoogleService-Info.plist in Resources */,
 				AEE7BCA81E1F18B1000BEE6F /* Main.storyboard in Resources */,
+				AEE7BCC61E1F57C9000BEE6F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +400,7 @@
 			baseConfigurationReference = B3C5EACF2EF8ED21D0325B60 /* Pods-MySocialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySocialApp/MySocialApp.entitlements;
 				DEVELOPMENT_TEAM = DPBA8FX7MF;
 				INFOPLIST_FILE = MySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +415,7 @@
 			baseConfigurationReference = 63ECA8F75FBBA76FA3EC9AD1 /* Pods-MySocialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySocialApp/MySocialApp.entitlements;
 				DEVELOPMENT_TEAM = DPBA8FX7MF;
 				INFOPLIST_FILE = MySocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
