@@ -21,15 +21,6 @@ class FeedVC: UIViewController {
 
 
     
-    @IBAction func signOutTapped(_ sender: Any) {
-        // remove from keychain
-        
-        let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
-        print("FOREST: ID Removed from keychain \(keychainResult)")
-        try! FIRAuth.auth()?.signOut()
-        
-        performSegue(withIdentifier: "goToSignIn", sender: nil)
-        
-    }
+
     
 }
