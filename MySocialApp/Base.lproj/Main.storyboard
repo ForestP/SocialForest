@@ -74,6 +74,9 @@
                                     <constraint firstAttribute="width" constant="100" id="XIc-G1-3wb"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8LR-LK-Tju"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-k1-xMo">
                                 <rect key="frame" x="46" y="371" width="283" height="117"/>
@@ -126,11 +129,49 @@
                     <connections>
                         <outlet property="emailField" destination="Dvx-Cd-YlJ" id="k4W-r3-Ucf"/>
                         <outlet property="passwordField" destination="cMu-XW-cAo" id="Fg2-zO-jdH"/>
+                        <segue destination="huF-qk-gAp" kind="show" identifier="goToFeed" id="Zck-PF-RXQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="4J2-Hx-gua">
+            <objects>
+                <viewController id="huF-qk-gAp" customClass="FeedVC" customModule="MySocialApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVx-el-UOV"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRh-10-jDg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fi1-YX-FIX" customClass="Feed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h7-bl-T09">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutTapped:" destination="huF-qk-gAp" eventType="touchUpInside" id="ZQQ-d0-kGh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.49019607840000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2h7-bl-T09" firstAttribute="leading" secondItem="fi1-YX-FIX" secondAttribute="leadingMargin" id="Nl9-ua-g5j"/>
+                            <constraint firstItem="2h7-bl-T09" firstAttribute="trailing" secondItem="fi1-YX-FIX" secondAttribute="trailingMargin" id="W1v-M4-eqY"/>
+                            <constraint firstItem="2h7-bl-T09" firstAttribute="centerY" secondItem="fi1-YX-FIX" secondAttribute="centerY" id="sfk-TF-2Rp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="87G-q8-h6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hk-ZO-ABt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
