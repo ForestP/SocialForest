@@ -26,6 +26,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         // Initialize Listeners for Firebase DB
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            // Emptys array upon change so posts arent duplicated
+            self.posts = []
+            
             // Gets children from Posts
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
@@ -61,9 +64,16 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let post = posts[indexPath.row]
-        print("FOREST: \(post.caption)")
+
         
-        return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            cell.configureCell(post: post)
+            return cell
+        } else {
+            // Safety
+            return PostCell()
+        }
+        
     }
     
     
