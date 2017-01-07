@@ -23,6 +23,7 @@
 		AEE7BCCA1E1F771E000BEE6F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCC91E1F771E000BEE6F /* CircleView.swift */; };
 		AEE7BCCC1E1F7DEF000BEE6F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCCB1E1F7DEF000BEE6F /* PostCell.swift */; };
 		AEE7BCCF1E2036F7000BEE6F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCCE1E2036F7000BEE6F /* DataService.swift */; };
+		AEE7BCD11E20941A000BEE6F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE7BCD01E20941A000BEE6F /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AEE7BCC91E1F771E000BEE6F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		AEE7BCCB1E1F7DEF000BEE6F /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AEE7BCCE1E2036F7000BEE6F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AEE7BCD01E20941A000BEE6F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B3C5EACF2EF8ED21D0325B60 /* Pods-MySocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySocialApp/Pods-MySocialApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 		AEE7BCB61E1F1DB7000BEE6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AEE7BCD01E20941A000BEE6F /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				AEE7BCCA1E1F771E000BEE6F /* CircleView.swift in Sources */,
 				AEE7BCBA1E1F34BB000BEE6F /* CustomView.swift in Sources */,
 				AEE7BCBF1E1F3DC4000BEE6F /* RoundBtn.swift in Sources */,
+				AEE7BCD11E20941A000BEE6F /* Post.swift in Sources */,
 				AEE7BCA51E1F18B1000BEE6F /* SignInVC.swift in Sources */,
 				AEE7BCC31E1F4736000BEE6F /* CustomBtn.swift in Sources */,
 				AEE7BCCF1E2036F7000BEE6F /* DataService.swift in Sources */,
