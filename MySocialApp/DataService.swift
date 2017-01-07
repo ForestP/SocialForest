@@ -31,6 +31,7 @@ class DataService {
         return _REF_USERS
     }
     
+    // Create user in firebase DB
     func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
         REF_USERS.child(uid).updateChildValues(userData)
     }

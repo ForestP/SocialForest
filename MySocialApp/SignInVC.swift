@@ -75,6 +75,7 @@ class SignInVC: UIViewController {
                     print("FOREST: Email user authenticated with Firebase")
                     if let user = user {
                         let userData = ["provider": user.providerID]
+                        // Passes user info to Firebase
                         self.completeSignIn(id: user.uid, userData: userData)
                     }
                     
@@ -95,6 +96,7 @@ class SignInVC: UIViewController {
         }
         
     }
+    
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirebaseDBUser(uid: id, userData: userData)

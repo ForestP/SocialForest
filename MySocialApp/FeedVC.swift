@@ -20,6 +20,18 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Initialize Listeners for Firebase DB
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            if let posts = snapshot.value {
+                print(posts)
+            }
+            
+            
+            
+        })
+        
+        
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -35,7 +47,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func signOutTapped(_sender: AnyObject) {
-        let keychainResult = KeychainWrapper.standard.remove(key: KEY_UID)
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("FOREST: ID Removed from keychain \(keychainResult)")
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
